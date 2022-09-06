@@ -1,0 +1,39 @@
+body{
+    font-size: 17px;
+    color: #fff;
+    background-color: #e8d3b9; 
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: rgb(136, 160, 217);
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 1px 1px 1px #fff;
+}
+.brand {
+    font-size: 1.78rem;
+    animation: alternate-reverse;
+}
+
+img { 
+    float: left;
+    height: 750px;
+    width: 450px;
+}
+
+.slidebar {
+    float: right;
+    height: 750px;
+    width: 73%;
+    margin-right: 10px;
+    background-color: #e8d3b9;
+    left: 450px;
+    top: 60px;
+    margin: 0px;
+    border: 0px;
+    color: black;
+    font-size: 125%;
+}

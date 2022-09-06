@@ -1,207 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<style>
+	 <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  margin-bottom: 30px;
-  font-size: 175%;
-}
-div{
-	background-color: white;
-	position: relative;
-}
-
-p {
-  border: 1px solid black;
-  background-color: grey;
-  height: 150px;
-  margin:10px;
-  margin-top: 0px;
-  padding-top: 2em;
-  font-family: Arial, sans-serif;
-  color: black;
-}
-/* Simple Responsive Framework. */
-.row {
-  width: 90%;
-}
-a{
-  background-color: #5F9EA0;
-  width: auto;
-  height: auto;
-  position: absolute;
-  right: 10px;
-  top: 0px;
-  margin: 0px;
-  border: 1px solid black;
-  font-size: 125%;
-}
-.color1{
-	background-color: lightyellow;
-}
-
-.color2{
-	background-color: lightpink;
-}
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
-/********** Small devices only **********/
-@media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-    border: 1px;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,800;1,200&display=swap" rel="stylesheet">
+	<title>Психолог Юлія Кудрявцева</title>
+	<style>
+	.common{
+		text-decoration: underline;
+		text-align: center;
+		font-family: cursive;
+		font-display: fallback;
+		font-size: 24px;
+		color: chocolate;
+		border-style: dotted;
+		border-color: black;
+	}
+	a:link, a:visited{
+		background: yellow;
+		text-decoration: none;
+		border: 1px solid blue;
+		color: black;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-bottom: 1px;
+	}
+	a:hover, a:active{
+		background-color: lightyellow;
+		color: black;
+		font-size: 170%;
+		cursor: pointer;
+	}
 </style>
 </head>
-<body>
-<h1>Hi everyone! I have a probee work to do...</h1>
 
-<div class="row">
-  <div class="col-lg-3 col-md-6">
-  	<p>
-  	<a>First thought</a>
-  	And the show begins... Once upon the time I wrote a poem, no I am just joiking, 
-	I am not a poet.</p>
-	</div>
-  <div class="col-lg-3 col-md-6">
-  	<p>
-  	<a class="color1">Second thought</a> This is now really happening, isn`t it?</p></div>
-  <div class="col-lg-3 col-md-12">
-  	<p><a class="color2">Third thought</a> Uno dos tres quatro chinco ses ocho nuevo dies</p></div>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-light bg-dark">
+			<a href="tel:+380955657655" class="brand">Юля Кудрявцева</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  <ul class="nav navbar-nav nav-justified">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Головна<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					  Послуги
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="#">Консультація 1</a>
+					  <a class="dropdown-item" href="#">Консультація 2</a>
+					  <a class="dropdown-item" href="#">Консультація 3</a>
+					</div>
+				  </li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Ціни</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Контакти</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Оплата</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+	</header>
+
+	<div>
+		<a>
+		<img src="front_photo.jpg">
+		</a>
+		<div  class="slidebar" id="accordion">
+			<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5 class="mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Якась інфа 1
+				</button>
+				</h5>
+			</div>
+			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div class="card-body">
+					Панічна атака - це короткий епізод сильного занепокоєння, що викликає фізичні відчуття страху, такі як прискорене серцебиття, задишку або запаморочення. Панічні атаки виникають часто та несподівано, зазвичай вони не пов'язані з будь-якою зовнішньою загрозою. Це дуже поширений недуг, який виникає у близько 35% людей хоча б раз у житті. Докладніше про те, що таке панічні атаки розповідаємо у статті.
+				</div>
+			</div>
+			</div>
+			<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Якась інфа 2
+				</button>
+				</h5>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					Посттравматичний стресовий розлад (ПТСР) - це тривожний розлад, спричинений дуже стресовими, лякаючими або неприємними подіями. Людина з хворобою ПТСР часто переживає травматичну подію через нічні кошмари та спогади і може відчувати почуття ізоляції, дратівливості та провини. Докладніше про те, що таке синдром посттравматичного стресу, причини та види ПТСР розповідаємо у цій статті.
+				</div>
+			</div>
+			</div>
+			<div class="card">
+			<div class="card-header" id="headingThree">
+				<h5 class="mb-0">
+				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Якась інфа 3
+				</button>
+				</h5>
+			</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				<div class="card-body">
+					Посттравматичний стресовий розлад (ПТСР) - це тривожний розлад, спричинений дуже стресовими, лякаючими або неприємними подіями. Людина з хворобою ПТСР часто переживає травматичну подію через нічні кошмари та спогади і може відчувати почуття ізоляції, дратівливості та провини. Докладніше про те, що таке синдром посттравматичного стресу, причини та види ПТСР розповідаємо у цій статті.
+				</div>
+			</div>
+			</div>
+		</div>
 </div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
