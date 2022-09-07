@@ -1,27 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-size: 17px;
-    color: #fff;
-    background-color: #e8d3b9; 
+    font-family: 'Lobster', cursive;
+    color: black;
+    background-color: #E9967A; 
+    backdrop-filter: blur(5px);
+    margin-bottom: 2px;
+    align-items: center;
 }
 
 /** HEADER **/
 #header-nav {
-    background-color: rgb(136, 160, 217);
-    border-radius: 0;
+    background-color: lightyellow;
+    border-radius: 3px;
     border: 0;
     display: flex;
-    font-family: 'Noto Sans', sans-serif;
-    text-shadow: 1px 1px 1px #fff;
+    text-shadow: 1px 1px 1px yellow ;
 }
 .brand {
     font-size: 1.78rem;
+    font-family: 'Lobster', cursive;
     animation: alternate-reverse;
+    margin-right: 15px;
 }
 
 img { 
-    float: left;
-    height: 750px;
-    width: 450px;
+    position: relative;
+    width: 27%;
 }
 
 .slidebar {
@@ -29,11 +38,48 @@ img {
     height: 750px;
     width: 73%;
     margin-right: 10px;
-    background-color: #e8d3b9;
+    background-color:white;
     left: 450px;
     top: 60px;
-    margin: 0px;
+    margin: 0;
     border: 0px;
     color: black;
     font-size: 125%;
+}
+
+.navbarfitpage {
+    position: sticky;
+    margin: 0px;
+    border:1px;
+    padding: 0px;
+    width: auto;
+}
+
+.navbar button.navbar-toggler, .navbar-toggler-icon {
+    border: 1px solid black;
+}
+
+.navbar button.navbar-toggler {
+    clear: both;
+}
+
+/*********** Large devices **********/
+@media (min-width: 1200px) {
+
+}
+/*********** Medium devices **********/
+@media (min-width: 992px) and (max-width: 1999px) {
+
+}
+
+/*********** Small devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*********** Extra small devices **********/
+@media (max-width: 767px) {
+    .brand {
+        font-size: 2rem;
+    }
 }
