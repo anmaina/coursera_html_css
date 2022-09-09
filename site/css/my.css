@@ -8,12 +8,31 @@ body{
     font-family: 'Lobster', cursive;
     color: black;
     background-color: #E9967A; 
-    backdrop-filter: blur(5px);
     margin-bottom: 2px;
     align-items: center;
+    text-align: center;
 }
 
+
 /** HEADER **/
+
+/*** NAVBAR ***/
+a:link, a:visited{
+    background: #E9967A;
+    opacity: 0.7;
+    text-decoration: none;
+    border: 0;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-bottom: 1px;
+}
+a:hover, a:active{
+    background-color: lightyellow;
+    color: black;
+    font-size: 170%;
+    cursor: pointer;
+}
 #header-nav {
     background-color: lightyellow;
     border-radius: 3px;
@@ -23,28 +42,11 @@ body{
 }
 .brand {
     font-size: 1.78rem;
+    width: fit-content;
     font-family: 'Lobster', cursive;
     animation: alternate-reverse;
     margin-right: 15px;
-}
-
-img { 
-    position: relative;
-    width: 27%;
-}
-
-.slidebar {
-    float: right;
-    height: 750px;
-    width: 73%;
-    margin-right: 10px;
-    background-color:white;
-    left: 450px;
-    top: 60px;
-    margin: 0;
-    border: 0px;
-    color: black;
-    font-size: 125%;
+    margin-left: 40px;
 }
 
 .navbarfitpage {
@@ -63,18 +65,58 @@ img {
     clear: both;
 }
 
+li {
+    text-align: center;
+}
+
+/*** MAIN CONTEXT ***/
+img { 
+    position: relative;
+    width: 27%;
+}
+
+.slidebar {
+    float: right;
+    height: 750px;
+    width: 73%;
+    margin-right: 10px;
+    left: 450px;
+    top: 60px;
+    margin: 0;
+    border: 0px;
+    color: black;
+    font-size: 125%;
+}
+
+
+.card-header {
+    background-color: #E9967A;
+    border-bottom: 0;
+}
+
+#map-tile {
+    height: 600px;
+    width: 450px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+
 /*********** Large devices **********/
 @media (min-width: 1200px) {
 
 }
 /*********** Medium devices **********/
-@media (min-width: 992px) and (max-width: 1999px) {
-
+@media (min-width: 992px) and (max-width: 1199px) {
+	a:hover, a:active{
+		font-size: 140%;
 }
 
 /*********** Small devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+	a:hover, a:active{
+		font-size: 120%;
 }
 
 /*********** Extra small devices **********/
